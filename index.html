@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Valentine ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔐 LOCK SCREEN -->
+<div id="lockScreen" class="lock">
+  <h2>🔐 Enter the Secret Password</h2>
+  <input type="password" id="pwd" placeholder="Hint: my nickname 😉">
+  <button onclick="unlock()">Unlock ❤️</button>
+  <p id="error"></p>
+</div>
+
+<!-- 💕 FALLING HEARTS -->
+<div class="hearts"></div>
+
+<!-- 🎵 MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ❤️ MAIN CONTENT -->
+<div id="mainContent" style="display:none;">
+  <div class="card">
+    <h1>❤️ Happy Valentine’s Day ❤️</h1>
+    <h2>My Love, <span class="name">Mariyam</span> 🌸</h2>
+
+    <p id="timer" class="countdown"></p>
+
+    <!-- 📸 SLIDER -->
+    <div class="slider">
+      <img id="slide" src="photos/pic1.jpg">
+    </div>
+
+    <p class="question">Will you be my Valentine? 💘</p>
+
+    <div class="buttons">
+      <button class="yes" onclick="sayYes()">YES 💖</button>
+      <button class="no" id="noBtn">NO 😜</button>
+    </div>
+
+    <p id="loveMessage"></p>
+
+    <!-- 📲 WHATSAPP -->
+    <button class="yes" onclick="openWhatsApp()">💬 Message Me</button>
+
+    <!-- 🫶 SECRET -->
+    <p class="hidden" onclick="revealLove()">Tap here for a secret 💌</p>
+    <p id="secret"></p>
+
+    <!-- 🎁 DOWNLOAD -->
+    <a href="valentine-card.jpg" download class="download">
+      🎁 Download Your Valentine Card
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
