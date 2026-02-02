@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Forever ❤️</title>
+
+  <!-- App icon -->
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🌸 Floating flowers & hearts -->
+<div class="particles"></div>
+
+<!-- 🔐 Lock / Splash -->
+<div id="lockScreen" class="lock">
+  <div class="lock-card">
+    <img src="splash.jpg" class="splash">
+    <h2>For My Forever 💍</h2>
+    <input type="password" id="pwd" placeholder="Password">
+    <button onclick="unlock()">Enter ❤️</button>
+    <p id="error"></p>
+  </div>
+</div>
+
+<!-- 🎵 Music -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 💖 Main Proposal -->
+<div id="mainContent" style="display:none;">
+  <div class="card">
+    <h1>🌙 Under This Night Sky…</h1>
+    <h2><span class="name">HER_NAME</span>,</h2>
+
+    <p class="proposal">
+      Every moment with you feels like magic ✨  
+      So today, from the depths of my heart…
+    </p>
+
+    <!-- 📸 Slider -->
+    <div class="slider">
+      <img id="slide" src="photos/pic1.jpg">
+    </div>
+
+    <p class="question">Will you be mine forever? 💍</p>
+
+    <div class="buttons">
+      <button class="yes" onclick="sayYes()">YES 💖</button>
+      <button class="no" id="noBtn">NO 😜</button>
+    </div>
+
+    <canvas id="fireworks"></canvas>
+
+    <p id="loveMessage"></p>
+
+    <a class="download" href="valentine-card.jpg" download>
+      🎁 Download Our Valentine Card
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

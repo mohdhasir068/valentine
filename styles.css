@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1b1f3b, #050510);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* 🌸 Floating particles */
+.particles::before {
+  content: "🌸 💖 🌹 💕 🌺 💫";
+  position: fixed;
+  top: -10%;
+  width: 100%;
+  font-size: 28px;
+  text-align: center;
+  animation: fall 12s linear infinite;
+}
+
+@keyframes fall {
+  0% { top: -10%; }
+  100% { top: 110%; }
+}
+
+/* 🔐 Lock */
+.lock {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, #2b2f5b, #050510);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lock-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  width: 90%;
+  max-width: 320px;
+}
+
+.lock-card input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  margin: 10px 0;
+}
+
+.lock-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  font-size: 16px;
+}
+
+.splash {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+/* 💖 Main Card */
+.card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(18px);
+  border-radius: 30px;
+  padding: 22px;
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+h1 { color: #ff8fab; }
+.name { color: #ff4d6d; }
+
+.slider img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 15px 0;
+}
+
+.question {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+}
+
+.yes {
+  background: #ff4d6d;
+  color: white;
+}
+
+.no {
+  background: #555;
+  color: #ccc;
+}
+
+.download {
+  display: block;
+  margin-top: 15px;
+  color: #ff8fab;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
